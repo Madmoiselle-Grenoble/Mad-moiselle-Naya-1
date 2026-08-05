@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Contact — Mad'moiselle by Naya Délice</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header id="site-header">
+<div class="wrap">
+<a class="logo" href="index.html">Mad<em>'</em>moiselle</a>
+<nav>
+<ul>
+<li><a href="boutique.html">Boutique</a></li>
+<li><a href="a-propos.html">À propos</a></li>
+<li><a href="points-de-vente.html">Points de vente</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="nav-actions">
+<button aria-label="Panier" class="btn-cart" id="cart-toggle">🛍<span class="cart-label">Panier</span><span class="cart-badge" id="cart-badge">0</span></button>
+<button aria-label="Menu" class="burger"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-drawer" id="cart-drawer">
+<div class="cart-drawer-head">
+<h3>Votre panier</h3>
+<button aria-label="Fermer" id="cart-close">×</button>
+</div>
+<div class="cart-items" id="cart-items"></div>
+<div class="cart-drawer-foot">
+<div class="cart-total-row"><span>Total</span><span id="cart-total">0,00 €</span></div>
+<button class="btn btn-solid" id="checkout-btn" style="width:100%;justify-content:center">Passer la commande</button>
+<p class="cart-note">Livraison calculée à l'étape suivante, sur la page Stripe.</p>
+</div>
+</aside>
+<section class="page-hero">
+<div class="wrap">
+<p class="eyebrow">Contact</p>
+<h1>Une question, une envie, <i style="font-style:italic;color:var(--or-clair)">une commande sur-mesure ?</i></h1>
+<p>Écrivez-moi directement — je réponds personnellement à chaque message.</p>
+<p id="form-sent-msg" style="display:none;color:var(--or-clair);margin-top:16px;font-size:.95rem">✦ Merci, votre message a bien été envoyé !</p>
+</div>
+</section>
+<section>
+<div class="wrap contact-grid">
+<div class="contact-info">
+<div class="item">
+<b>Par e-mail</b>
+<span><a href="mailto:contact@nayadelice.fr">contact@nayadelice.fr</a></span>
+</div>
+<div class="item">
+<b>Par téléphone</b>
+<span>07 51 04 17 22</span>
+</div>
+<div class="item">
+<b>Adresse</b>
+<span>9 Avenue Paul Cocat, 38100 Grenoble</span>
+</div>
+<div class="item">
+<b>Au marché</b>
+<span>Marché des Ayguinards, Meylan — chaque semaine</span>
+</div>
+</div>
+<form action="https://formsubmit.co/contact@nayadelice.fr" class="contact-form" method="POST">
+<input name="_subject" type="hidden" value="Nouveau message depuis le site Mad'moiselle"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input name="_next" type="hidden" value="https://nayadelice.fr/contact.html?envoye=1"/>
+<div class="form-grid">
+<div class="form-field">
+<label for="nom">Nom</label>
+<input id="nom" name="nom" required="" type="text">
+</input></div>
+<div class="form-field">
+<label for="email">E-mail</label>
+<input id="email" name="email" required="" type="email">
+</input></div>
+<div class="form-field full">
+<label for="sujet">Sujet</label>
+<select id="sujet" name="sujet">
+<option>Une question sur une commande</option>
+<option>Un coffret personnalisé</option>
+<option>Une demande professionnelle</option>
+<option>Autre chose</option>
+</select>
+</div>
+<div class="form-field full">
+<label for="message">Message</label>
+<textarea id="message" name="message" placeholder="Racontez-moi tout..." required=""></textarea>
+</div>
+</div>
+<button class="btn-submit" type="submit">Envoyer le message</button>
+</form>
+</div>
+</section>
+<footer id="contact">
+<div class="wrap">
+<div class="footer-cta">
+<h2>Envie de goûter un bout de mon histoire ? <i style="color:var(--or-clair);font-style:italic">Écrivez-moi.</i></h2>
+<a class="btn btn-solid" href="mailto:contact@nayadelice.fr">contact@nayadelice.fr</a>
+</div>
+<div class="footer-grid">
+<div>
+<h4>Mad'moiselle</h4>
+<p>Madeleines artisanales par Naya Délice — Grenoble.</p>
+</div>
+<div>
+<h4>Boutique</h4>
+<ul>
+<li><a href="boutique.html">Tour du Monde</a></li>
+<li><a href="boutique.html">Coffrets</a></li>
+<li><a href="boutique.html">Madeleine Cake</a></li>
+</ul>
+</div>
+<div>
+<h4>Entreprise</h4>
+<ul>
+<li><a href="a-propos.html">À propos</a></li>
+<li><a href="points-de-vente.html">Points de vente</a></li>
+<li>Mentions légales <span style="color:var(--pierre);font-size:.72rem">(à venir)</span></li>
+</ul>
+</div>
+<div>
+<h4>Contact</h4>
+<ul>
+<li>07 51 04 17 22</li>
+<li>9 av. Paul Cocat, 38100 Grenoble</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 Mad'moiselle by Naya Délice — SIRET 995 085 263 00011</span>
+<span>Médiation : MCP</span>
+</div>
+</div>
+</footer>
+<script src="js/main.js"></script>
+<script>
+  if (new URLSearchParams(window.location.search).get('envoye') === '1') {
+    document.getElementById('form-sent-msg').style.display = 'block';
+    document.querySelector('.contact-form')?.style.setProperty('display', 'none');
+  }
+</script>
+<script src="https://js.stripe.com/v3/"></script><script src="js/cart.js"></script><script src="js/checkout.js"></script></body>
+</html>

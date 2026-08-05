@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Mad'moiselle by Naya Délice — Madeleines artisanales, Tour du Monde</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header id="site-header">
+<div class="wrap">
+<a class="logo" href="index.html">Mad<em>'</em>moiselle</a>
+<nav>
+<ul>
+<li><a href="boutique.html">Boutique</a></li>
+<li><a href="a-propos.html">À propos</a></li>
+<li><a href="points-de-vente.html">Points de vente</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="nav-actions">
+<button aria-label="Panier" class="btn-cart" id="cart-toggle">🛍<span class="cart-label">Panier</span><span class="cart-badge" id="cart-badge">0</span></button>
+<button aria-label="Menu" class="burger"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-drawer" id="cart-drawer">
+<div class="cart-drawer-head">
+<h3>Votre panier</h3>
+<button aria-label="Fermer" id="cart-close">×</button>
+</div>
+<div class="cart-items" id="cart-items"></div>
+<div class="cart-drawer-foot">
+<div class="cart-total-row"><span>Total</span><span id="cart-total">0,00 €</span></div>
+<button class="btn btn-solid" id="checkout-btn" style="width:100%;justify-content:center">Passer la commande</button>
+<p class="cart-note">Livraison calculée à l'étape suivante, sur la page Stripe.</p>
+</div>
+</aside>
+<section class="hero">
+<div class="hero-media">
+<img alt="Stand Mad'moiselle by Naya Délice, madeleines artisanales" src="img/hero-stand.jpg"/>
+</div>
+<div class="wrap hero-bottom">
+<p>Je m'appelle Selena. Tout est parti d'un rituel du dimanche avec ma grand-mère, et de près de vingt ans vécus au Sénégal — pour vous faire voyager en une bouchée.</p>
+<div class="hero-ctas">
+<a class="btn btn-solid" href="#boutique">Découvrir la boutique</a>
+<a class="btn btn-ghost" href="#histoire">Notre histoire</a>
+</div>
+</div>
+<div class="hero-scroll"><span class="line"></span> Faire défiler</div>
+</section>
+<section id="boutique">
+<div class="wrap">
+<div class="section-head">
+<div>
+<p class="eyebrow">La collection Tour du Monde</p>
+<h2>Six lieux qui m'ont marquée.</h2>
+</div>
+<p>Chaque escale de ma vie a laissé un goût. J'ai essayé de les mettre en madeleine — à vous de les découvrir, une à une.</p>
+</div>
+<div class="escales-strip">
+<div class="escale">
+<div class="escale-media"><img alt="Escale Sénégal" src="img/escale-senegal.jpg"/></div>
+<div class="escale-body">
+<div class="escale-code">SEN <span>SÉNÉGAL</span></div>
+<h3>Escale Sénégal</h3>
+<p>La mangue et le piment de mes vingt années dakaroises, dans une seule bouchée.</p>
+<div class="escale-price"><span>À la pièce</span><b>4,90 €</b><button class="add" data-add-to-cart="" data-name="Escale Sénégal" data-price="4.9" data-price-id="price_1Th4v40PKUOkzzjz38Ek5Mfr">Ajouter →</button></div>
+</div>
+</div>
+<div class="escale">
+<div class="escale-media"><img alt="Escale Italie" src="img/escale-italie.jpg"/></div>
+<div class="escale-body">
+<div class="escale-code">ITA <span>ITALIE</span></div>
+<h3>Escale Italie</h3>
+<p>Un souvenir gourmand, chocolat noir intense et cerises — pour les amoureux d'émotions fortes.</p>
+<div class="escale-price"><span>À la pièce</span><b>4,90 €</b><button class="add" data-add-to-cart="" data-name="Escale Italie" data-price="4.9" data-price-id="price_1Th4v40PKUOkzzjz38Ek5Mfr">Ajouter →</button></div>
+</div>
+</div>
+<div class="escale">
+<div class="escale-media"><img alt="Escale Liban" src="img/escale-liban.jpg"/></div>
+<div class="escale-body">
+<div class="escale-code">LIB <span>LIBAN</span></div>
+<h3>Escale Liban</h3>
+<p>La délicatesse de la pistache et de l'eau de rose — un instant de douceur suspendu.</p>
+<div class="escale-price"><span>À la pièce</span><b>4,90 €</b><button class="add" data-add-to-cart="" data-name="Escale Liban" data-price="4.9" data-price-id="price_1Th4v40PKUOkzzjz38Ek5Mfr">Ajouter →</button></div>
+</div>
+</div>
+<div class="escale">
+<div class="escale-media"><img alt="Escale Brésil" src="img/escale-bresil.jpg"/></div>
+<div class="escale-body">
+<div class="escale-code">BRÉ <span>BRÉSIL</span></div>
+<h3>Escale Brésil</h3>
+<p>Coco et citron vert, comme une brise venue d'ailleurs.</p>
+<div class="escale-price"><span>À la pièce</span><b>4,90 €</b><button class="add" data-add-to-cart="" data-name="Escale Brésil" data-price="4.9" data-price-id="price_1Th4v40PKUOkzzjz38Ek5Mfr">Ajouter →</button></div>
+</div>
+</div>
+<div class="escale">
+<div class="escale-media"><img alt="Escale Grenoble" src="img/escale-grenoble.jpg"/></div>
+<div class="escale-body">
+<div class="escale-code">GRE <span>GRENOBLE</span></div>
+<h3>Escale Grenoble</h3>
+<p>Noix, génépi et citron — l'escale que j'appelle aujourd'hui chez moi.</p>
+<div class="escale-price"><span>À la pièce</span><b>4,90 €</b><button class="add" data-add-to-cart="" data-name="Escale Grenoble" data-price="4.9" data-price-id="price_1Th4v40PKUOkzzjz38Ek5Mfr">Ajouter →</button></div>
+</div>
+</div>
+<div class="escale">
+<div class="escale-media"><img alt="Escale Canada" src="img/escale-canada.jpg"/></div>
+<div class="escale-body">
+<div class="escale-code">CAN <span>CANADA</span></div>
+<h3>Escale Canada</h3>
+<p>Pécan et sirop d'érable, pour ceux qui aiment voyager loin.</p>
+<div class="escale-price"><span>À la pièce</span><b>4,90 €</b><button class="add" data-add-to-cart="" data-name="Escale Canada" data-price="4.9" data-price-id="price_1Th4v40PKUOkzzjz38Ek5Mfr">Ajouter →</button></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section style="background:var(--noir-soft)">
+<div class="wrap">
+<div class="section-head">
+<div>
+<p class="eyebrow">Coffrets</p>
+<h2>Pour offrir, ou pour se faire plaisir.</h2>
+</div>
+<p>Trois compositions signature, pensées pour un cadeau qui sort de l'ordinaire.</p>
+</div>
+<div class="coffrets-grid">
+<div class="coffret">
+<div class="coffret-media"><img alt="Coffret du Dauphiné sucré" class="contain" src="img/dauphine-sucre-box.jpg"/></div>
+<div class="coffret-body">
+<span class="tag">Sucré</span>
+<h3>Coffret du Dauphiné</h3>
+<p>Myrtille/amande, noix de Grenoble/génépi/citron, chartreuse/citron — l'Isère dans un coffret.</p>
+<div class="price-row"><span class="price">15,80 €</span><button class="add" data-add-to-cart="" data-name="Coffret du Dauphiné" data-price="15.8" data-price-id="price_1TzgHM0PKUOkzzjz4KCxcxV7">Ajouter →</button></div>
+</div>
+</div>
+<div class="coffret">
+<div class="coffret-media"><img alt="Coffret du Dauphiné salé" class="contain" src="img/dauphine-sale-box.jpg"/></div>
+<div class="coffret-body">
+<span class="tag">Salé</span>
+<h3>Coffret du Dauphiné</h3>
+<p>Ail des ours/chèvre, Mont Granier/noisette, Bleu de Bonneval/noix de Grenoble.</p>
+<div class="price-row"><span class="price">15,80 €</span><button class="add" data-add-to-cart="" data-name="Coffret du Dauphiné" data-price="15.8" data-price-id="price_1TzgG90PKUOkzzjzCLwpuVSL">Ajouter →</button></div>
+</div>
+</div>
+<div class="coffret">
+<div class="coffret-media"><img alt="Coffret Tour du Monde, 6 madeleines" class="contain" src="img/coffret-tour-du-monde.jpg"/></div>
+<div class="coffret-body">
+<span class="tag">Signature</span>
+<h3>Coffret Tour du Monde</h3>
+<p>Les six escales réunies — le tour du monde complet, en un seul coffret.</p>
+<div class="price-row"><span class="price">26,40 €</span><button class="add" data-add-to-cart="" data-name="Coffret Tour du Monde" data-price="26.4" data-price-id="price_1TzgEh0PKUOkzzjz32d1t36M">Ajouter →</button></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="histoire">
+<div class="wrap story">
+<div class="story-visual"><span>Photo à intégrer — atelier / marché</span></div>
+<div class="story-text">
+<p class="eyebrow">Mon histoire</p>
+<h2 style="margin:14px 0 22px;font-size:clamp(1.7rem,3vw,2.3rem)">Deux passions, une seule madeleine.</h2>
+<p>Tout commence un dimanche, enfant, les mains dans la pâte avec ma grand-mère. La madeleine, c'est elle qui me l'a apprise — ce rituel-là ne m'a jamais quittée.</p>
+<p>Puis il y a eu le voyage. Près de vingt ans vécus au Sénégal, à découvrir d'autres cultures, d'autres saveurs, une autre façon de partager un repas et un moment. Cette richesse-là, j'ai eu envie de la transmettre.</p>
+<p>Mad'moiselle est née de la rencontre de ces deux passions : la madeleine de mon enfance et le goût du voyage. Aujourd'hui, je propose des madeleines artisanales premium, sans conservateur ni additif, inspirées des saveurs du monde et du terroir dauphinois — avec une seule ambition : vous faire voyager, le temps d'une dégustation.</p>
+<div class="story-milestones">
+<div class="milestone"><b>2025</b><span>Création de l'entreprise</span></div>
+<div class="milestone"><b>2026</b><span>Marché des Ayguinards</span></div>
+<div class="milestone"><b>6</b><span>Destinations au catalogue</span></div>
+</div>
+</div>
+</div>
+</section>
+<section id="points-de-vente" style="background:var(--noir-soft)">
+<div class="wrap">
+<div class="section-head">
+<div>
+<p class="eyebrow">Nous trouver</p>
+<h2>Au marché, ou chez vous.</h2>
+</div>
+</div>
+<div class="pdv-grid">
+<div class="pdv-card">
+<div>
+<h3>Marché des Ayguinards</h3>
+<p style="color:var(--pierre);margin-top:8px">Meylan — venez me rencontrer, goûter, discuter. C'est là que tout a commencé.</p>
+</div>
+<div class="meta">
+<div><b>Meylan</b><span>Lieu</span></div>
+<div><b>Hebdomadaire</b><span>Fréquence</span></div>
+</div>
+</div>
+<div class="pdv-card">
+<div>
+<h3>Livraison nationale</h3>
+<p style="color:var(--pierre);margin-top:8px">Expédition partout en France, soigneusement emballée.</p>
+</div>
+<div class="meta">
+<div><b>48h</b><span>Délai</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer id="contact">
+<div class="wrap">
+<div class="footer-cta">
+<h2>Envie de goûter un bout de mon histoire ? <i style="color:var(--or-clair);font-style:italic">Écrivez-moi.</i></h2>
+<a class="btn btn-solid" href="mailto:contact@nayadelice.fr">contact@nayadelice.fr</a>
+</div>
+<div class="footer-grid">
+<div>
+<h4>Mad'moiselle</h4>
+<p>Madeleines artisanales par Naya Délice — Grenoble.</p>
+</div>
+<div>
+<h4>Boutique</h4>
+<ul>
+<li>Tour du Monde</li>
+<li>Coffrets</li>
+<li>Madeleine Cake</li>
+</ul>
+</div>
+<div>
+<h4>Entreprise</h4>
+<ul>
+<li>À propos</li>
+<li>Points de vente</li>
+<li>Mentions légales</li>
+</ul>
+</div>
+<div>
+<h4>Contact</h4>
+<ul>
+<li>07 51 04 17 22</li>
+<li>9 av. Paul Cocat, 38100 Grenoble</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 Mad'moiselle by Naya Délice — SIRET 995 085 263 00011</span>
+<span>Médiation : MCP</span>
+</div>
+</div>
+</footer>
+<script src="js/main.js"></script>
+<script src="https://js.stripe.com/v3/"></script><script src="js/cart.js"></script><script src="js/checkout.js"></script></body>
+</html>
